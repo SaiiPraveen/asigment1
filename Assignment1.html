@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html language=en>
+    <head>
+        <title>Letsupgrade</title>
+        <style>
+            h2 span{
+                color:goldenrod;
+                background-color:rgb(29, 27, 27);
+                border-radius: 3px;
+
+            }
+            .pad{
+                padding-top: 17px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2><span>Hello!</span></h2>
+        <h3>I can perform arthematic operations for you</h3>
+        <form name="sun" >
+            Number1: <input type="text" placeholder="Enter first digit:" name="first"> 
+            Number2: <input type="text" placeholder="Enter second digit:"name="second">
+            <br>
+            <div class="pad">
+            <input type="button " value="ADD" onclick="addition()">
+            <input type="button" value="SUB" onclick="subtraction()">
+            <input type="button" value="MUL" onclick="multiply()">
+            <input type="button" value="DIV" onclick="division()">
+            <input type="button" value="MOD" onclick="modulus()">
+            </div>
+            <br>
+            Result: <input type="text" name="total">
+        </form>
+         
+        
+   
+        <script  type="text/javascript">
+            function addition()
+            {
+                // var a, b, c;
+                a=Number(document.sun.first.value);
+                b=Number(document.sun.second.value);
+                c=a+b;
+                document.sun.total.value=c;
+            }
+            function subtraction(){
+            a=Number(document.sun.first.value);
+            b=Number(document.sun.second.value);
+            c=a-b;
+            document.sun.total.value=c;
+            }
+            function multiply(){
+            a=Number(document.sun.first.value);
+            b=Number(document.sun.second.value);
+            c=a*b;
+            document.sun.total.value=c;
+            }
+            function division(){
+            a=Number(document.sun.first.value);
+            b=Number(document.sun.second.value);
+            c=a/b;
+            document.sun.total.value=c;
+            }
+            function modulus(){
+            a=Number(document.sun.first.value);
+            b=Number(document.sun.second.value);
+            c=a%b;
+            document.sun.total.value=c;
+            }
+        </script>
+    </body>
+</html>
